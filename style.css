@@ -1,0 +1,130 @@
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    /* place-items: center; */
+    justify-items: center; /* center horizontally */
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-template-rows: 1fr auto;
+}
+
+.container {
+    display: grid;
+    position: relative;
+    background-color: white;
+    max-width: 340px;
+    bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.illustration-hero {
+    /* max-width: 340px; */
+    width: 100%;
+    display: block;
+}
+
+.texts {
+    text-align: center;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.annual {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    width: 300px;
+    align-self: center;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.proceed:hover {
+    background-color: darkblue;
+    transition: 0.3s ease;
+/* transform-origin: center; */
+/* transform: scale(1.1); */
+ transform: translateY(-2px);
+
+}
+
+.cancel {
+    border: none;
+    align-self: center;
+    background-color: transparent;
+    min-height: 70px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    transform: scale(1.1);
+}
+
+.annualp {
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.year {
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.6875rem;
+    padding: 20px;
+}
